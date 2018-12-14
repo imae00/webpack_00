@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+$ubuntu-font: 'Ubuntu';
+$black-background: black;
+
+.fuente-ubuntu {
+    font-family: $ubuntu-font;
+    text-align: center;
+}
+.imagen{
+    background-color: $black-background;
+    width:100%;
+}
