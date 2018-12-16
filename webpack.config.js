@@ -1,5 +1,6 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 var webpack = require('webpack');
 var path = require('path');
 
@@ -67,6 +68,13 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
+    }),
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static',
+      generateStatsFile: false,
+      statsOptions: { source: false },
+      reportFilename: './libraryWeight.html',
+      openAnalyzer: false
     }),
   ],
 };

@@ -1,1 +1,1 @@
-{"version":3,"sources":["webpack:///./mystyles.scss"],"names":[],"mappings":"AAAA;AACA,yBAAyB","file":"appStyles.css","sourcesContent":[".red-background {\n  background-color: teal; }\n"],"sourceRoot":""}
+{"version":3,"sources":["webpack:///./mystyles.scss (1)"],"names":[],"mappings":";AAAA;AACA;AACA,qBAAqB;;AAErB;AACA;AACA,cAAc","file":"appStyles.css","sourcesContent":[".fuente-ubuntu {\n  font-family: \"Ubuntu\";\n  text-align: center; }\n\n.imagen {\n  background-color: black;\n  width: 100%; }\n"],"sourceRoot":""}

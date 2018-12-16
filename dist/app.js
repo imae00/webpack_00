@@ -32691,8 +32691,15 @@ var React = _interopRequireWildcard(__webpack_require__(/*! react */ "../node_mo
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
-var HelloComponent = function HelloComponent() {
-  return React.createElement("h2", null, "Hello component !");
+var HelloComponent = function HelloComponent(state) {
+  return React.createElement(React.Fragment, null, React.createElement("img", {
+    className: "imagen",
+    src: "https://www.solbooking.com/Content/img/Master/logo-solbooking.svg"
+  }), React.createElement("h1", {
+    className: "fuente-ubuntu"
+  }, state.texto), React.createElement("a", {
+    href: "../dist/libraryWeight.html"
+  }, "Peso Librerias "));
 };
 
 exports.HelloComponent = HelloComponent;
@@ -32717,7 +32724,9 @@ var _hello = __webpack_require__(/*! ./hello */ "./hello.tsx");
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
-ReactDOM.render(React.createElement(_hello.HelloComponent, null), document.getElementById('root'));
+ReactDOM.render(React.createElement(_hello.HelloComponent, {
+  texto: "Hola Mundooooo !"
+}), document.getElementById('root'));
 
 /***/ }),
 
